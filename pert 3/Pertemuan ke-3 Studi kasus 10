@@ -1,0 +1,40 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main(){
+
+int a, b, c, d, e, tot;
+double rata, dev;
+
+cout << "Masukkan Angka 1 : ";
+cin >> a;
+cout << "Masukkan angka 2: ";
+cin >> b;
+cout << "Masukkan angka 3: " ;
+cin >> c;
+cout << "Masukkan angka 4: " ;
+cin >> d;
+cout << "Masukkan angka 5: " ;
+cin >> e;
+
+tot = a+b+c+d+e;
+rata = tot / 5;
+
+dev = ((a - rata) * (a - rata) +
+       (b - rata) * (b - rata) +
+       (c - rata) * (c - rata) +
+       (d - rata) * (d - rata) +
+       (e - rata) * (e - rata)) / 5;
+
+
+
+
+    cout << "--------------------------------" << endl;
+    cout << "Rata-Rata: "   << fixed << setprecision(2) << rata << endl;
+    cout << "Deviasi: "  << setprecision(2) << dev << endl;
+
+ 
+    return 0;
+}
